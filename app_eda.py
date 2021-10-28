@@ -5,7 +5,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 st.set_page_config(layout='centered',
                    initial_sidebar_state='expanded',
-                   page_title='Exploratory Data Analysis',
+                   page_title='Explore your data',
                    page_icon='📈')
 
 #hide_menu_style = """
@@ -28,14 +28,14 @@ with col1:
 
 with col2:
     st.markdown('''
-    # ** | Explory your Data**
+    # ** | Explore your Data**
     ''')
 
 
 # Upload CSV data
 with st.sidebar:
     st.image('https://ciandt.com/themes/custom/ciandt_theme/logo.svg')
-    st.header('Explory your data')
+    st.header('Explore your data')
 
     uploaded_file = st.sidebar.file_uploader("Upload your CSV file here", type=["csv"])
 
