@@ -28,13 +28,24 @@ with col1:
 
 with col2:
     st.markdown('''
-    # ** | Exploratory Data Analysis**
+    # ** | Explory your Data**
     ''')
 
 
 # Upload CSV data
-with st.sidebar.header('1. Upload your CSV data'):
-    uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
+with st.sidebar:
+    st.image('https://ciandt.com/themes/custom/ciandt_theme/logo.svg')
+    st.header('Explory your data')
+
+    uploaded_file = st.sidebar.file_uploader("Upload your CSV file here", type=["csv"])
+
+    st.header('How it works?')
+    st.markdown('''
+    This app allows for an analytical exploration of your dataframe, 
+    showing the main features and statistical information, using a **Pandas Profiling**.
+    
+    If you want to know more about **Pandas Profiling**, [click here](https://github.com/pandas-profiling/pandas-profiling).''')
+
 
 # Pandas Profiling Report
 if uploaded_file is not None:
