@@ -8,13 +8,13 @@ st.set_page_config(layout='centered',
                    page_title='Explore your data',
                    page_icon='📈')
 
-#hide_menu_style = """
-#        <style>
-#        #MainMenu {visibility: hidden; }
-#        footer {visibility: hidden;}
-#        </style>
-#        """
-#st.markdown(hide_menu_style, unsafe_allow_html=True)
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
 st.image('https://image.freepik.com/vetores-gratis/dados-informam-o-conceito-de-ilustracao_114360-864.jpg')
